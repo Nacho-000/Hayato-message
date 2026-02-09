@@ -43,9 +43,9 @@
   position: fixed;
   top: -10%;
   color: rgba(255, 182, 193, 0.6);
-  font-size: 18px;
+  font-size: 22px;
   animation: fall linear infinite;
-  z-index: 0;
+  z-index: 10;
   pointer-events: none;
 }
 
@@ -58,10 +58,14 @@
   }
 }
 
-/* 手紙は前面に */
 .letter {
+  max-width: 720px;
+  margin: auto;
+  background: #ffffff;
+  padding: 3em;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
   position: relative;
-  z-index: 1;
 }
   </style>
 </head>
@@ -120,6 +124,7 @@
 
 </body>
 </html>
+
 
 
 
