@@ -38,11 +38,41 @@
     padding: 1.5em 0.8em;
   }
 }
+    /* 桜の花びら */
+.sakura {
+  position: fixed;
+  top: -10%;
+  color: rgba(255, 182, 193, 0.6);
+  font-size: 18px;
+  animation: fall linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) translateX(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(120vh) translateX(40px) rotate(360deg);
+  }
+}
+
+/* 手紙は前面に */
+.letter {
+  position: relative;
+  z-index: 1;
+}
   </style>
 </head>
 
 <body>
 
+  <span class="sakura" style="left:10%; animation-duration: 12s;">🌸</span>
+<span class="sakura" style="left:30%; animation-duration: 15s;">🌸</span>
+<span class="sakura" style="left:50%; animation-duration: 18s;">🌸</span>
+<span class="sakura" style="left:70%; animation-duration: 14s;">🌸</span>
+<span class="sakura" style="left:90%; animation-duration: 16s;">🌸</span>
 <div class="letter">
 
 <p>
@@ -90,6 +120,7 @@
 
 </body>
 </html>
+
 
 
 
